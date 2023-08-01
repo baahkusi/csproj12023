@@ -2,6 +2,14 @@
 
 This smart contract is designed for use on a private blockchain and hence no optimizations were made for storage since there isn't any incentive to do that. Also it prevents the need to have an indexer arranging data and everything is accomplished within the smart contract.
 
+### Usage
+
+- `npm i` to install all the dependencies
+- `npm run compile` to compile all the contracts
+- `npm run tests` to run all the tests
+- `npm run deploy` to deploy to the local hardhat network
+- `npm run deploy:sepolia` to deploy to the sepolia network
+
 ### Requirements
 
 A smart contract backend to satisfy the following requirements;
@@ -66,3 +74,34 @@ In order to efficiently store and retrieve questions, some necessary data struct
 3. Retrieve questions uploaded in a particular level.
 
 4. Retrieve questioins uploaded in for a particular course.
+
+#### Deployments
+1. Deployed To sepolia network https://sepolia.etherscan.io/address/0xDdd66E1590539F06f7190B0823fA48cD7CFdfBf6 
+```json
+{
+  "_type": "TransactionReceipt",
+  "accessList": [],
+  "blockNumber": null,
+  "blockHash": null,
+  "chainId": "11155111",
+  "contractAddress": "0xDdd66E1590539F06f7190B0823fA48cD7CFdfBf6",
+  "from": "0xb3fAED28554eF9F249873Bae907564cFB20410b6",
+  "gasLimit": "1740833",
+  "gasPrice": "7605710",
+  "hash": "0x10a493039c4a2c29d5de470420caf20d688d7586a732c703c7ef20e98eb7b126",
+  "maxFeePerGas": "7605710",
+  "maxPriorityFeePerGas": "4638417",
+  "nonce": 23,
+  "signature": {
+    "_type": "signature",
+    "networkV": null,
+    "r": "0x0acfab2ebf5a21994afa5080f659dea288090df067876bd89c01942e934ca587",
+    "s": "0x16883470838e83aebd09ad28342d65c6a2282234f90faf7ea25a57e16db896a1",
+    "v": 28
+  },
+  "to": null,
+  "type": 2,
+  "value": "0"
+}
+
+```

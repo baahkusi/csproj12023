@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx hardhat compile"
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run ./scripts/deploy_exam_subs.ts",
+    "deploy:sepolia": "npx hardhat run ./scripts/deploy_exam_subs.ts --network sepolia",
+    "verify:sepolia": "npx hardhat verify --network sepolia "
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,7 @@
   "homepage": "https://github.com/baahkusi/csproj12023#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.4",
     "hardhat": "^2.17.0"
   },
   "dependencies": {
